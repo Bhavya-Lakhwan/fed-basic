@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pastel-light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavya Lakhwan | Portfolio • B.Tech CS(AI)</title>
+  <meta name="description" content="Personal portfolio of Bhavya Lakhwan - B.Tech Computer Science and Artificial Intelligence 1st year student. Projects in C programming and Frontend development.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Ambient Pastel Glow Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">Bhavya<span class="logo-dot">.✦</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Action Controls -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle pastel dark mode" title="Toggle Pastel Light / Dark">
+          <span id="themeIcon">🌸</span>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary">Say Hello ✨</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Welcome to my digital space</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Bhavya Lakhwan</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            B.Tech Computer Science & AI (1st Year) • C Developer • Frontend Enthusiast
+          </p>
+
+          <p class="hero-description">
+            Passionate first-year engineering student exploring the intersection of computer science, core programming, and artificial intelligence. Currently building robust system utilities in C and creating elegant, user-centric web applications.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              View My Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Get In Touch
+            </a>
+          </div>
+
+          <!-- Quick Stats Row -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">C Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Web Apps</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">1st</span>
+              <span class="stat-label">Year B.Tech CSAI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-wrapper">
+              <div class="avatar-placeholder">
+                <span class="avatar-initials">BL</span>
+              </div>
+            </div>
+            <div class="profile-info">
+              <h3>Bhavya Lakhwan</h3>
+              <p class="profile-tag">B.Tech CS(AI) Student</p>
+              <div class="profile-pills">
+                <span class="pill">C Language</span>
+                <span class="pill">Frontend</span>
+                <span class="pill">AI Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">A Little About My Journey 🌸</h2>
+          <p class="section-subtitle">Curious learner, problem solver, and tech creator.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <h3>Hello there! 👋</h3>
+            <p>
+              I am <strong>Bhavya Lakhwan</strong>, currently in my <strong>first year of B.Tech in Computer Science and Artificial Intelligence (CSAI)</strong>. I have a keen curiosity for how software systems operate under the hood, as well as how beautiful user interfaces make technology accessible and enjoyable for everyone.
+            </p>
+            <p>
+              My coding journey started with mastering core foundational programming concepts in <strong>C</strong> — understanding pointers, dynamic memory allocation, and file handling through terminal-based systems. Concurrently, I've expanded into <strong>frontend web development</strong>, building interactive and responsive tools that solve everyday problems.
+            </p>
+            <p>
+              I am eager to dive deeper into <strong>Data Structures & Algorithms, Machine Learning, and Full-Stack Engineering</strong> as I progress through my engineering degree.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🎓</span>
+                <div>
+                  <strong>Academic Track</strong>
+                  <p>B.Tech in Computer Science & AI</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💻</span>
+                <div>
+                  <strong>Current Focus</strong>
+                  <p>C Systems Logic & Modern Frontend</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🎯</span>
+                <div>
+                  <strong>Goal</strong>
+                  <p>Building impactful AI-driven applications</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-side-cards">
+            <div class="glass-card info-card">
+              <div class="card-icon">💡</div>
+              <h4>Core Interests</h4>
+              <ul class="clean-list">
+                <li>Algorithms & Logic Building</li>
+                <li>Clean UI/UX & Responsive Web Design</li>
+                <li>Artificial Intelligence & Machine Learning</li>
+                <li>System Utilities & File Systems in C</li>
+              </ul>
+            </div>
+
+            <div class="glass-card info-card">
+              <div class="card-icon">✨</div>
+              <h4>Quick Bio Details</h4>
+              <div class="bio-row">
+                <span class="bio-label">Location:</span>
+                <span class="bio-val">India 🇮🇳</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-label">Degree:</span>
+                <span class="bio-val">B.Tech CS(AI)</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-label">Year:</span>
+                <span class="bio-val">1st Year Undergraduate</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-label">Hobbies:</span>
+                <span class="bio-val">Coding, Reading Tech, Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Toolkit</span>
+          <h2 class="section-title">Skills & Technologies 🛠️</h2>
+          <p class="section-subtitle">The tools and languages I use to build logic and interfaces.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Core Programming -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon-badge">⚡</div>
+              <div>
+                <h3>Programming Languages</h3>
+                <p>Systems & Web Scripting</p>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-emoji">🔷</span>
+                <span><strong>C Language</strong> (Pointers, Structs, File I/O)</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">💛</span>
+                <span><strong>JavaScript</strong> (ES6+, DOM Manipulation)</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">🧡</span>
+                <span><strong>HTML5</strong> (Semantic Markup)</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">💙</span>
+                <span><strong>CSS3</strong> (Flexbox, Grid, Custom Properties)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Computer Science Foundations -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon-badge">🧠</div>
+              <div>
+                <h3>CS Foundations</h3>
+                <p>Core concepts & Architecture</p>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-emoji">📂</span>
+                <span>File Handling & Data Persistence</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">🧩</span>
+                <span>Data Structures Fundamentals</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">🎯</span>
+                <span>Algorithmic Thinking & Problem Solving</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">🤖</span>
+                <span>Foundations of AI & ML (Curriculum)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Web Technologies & Tools -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon-badge">🎨</div>
+              <div>
+                <h3>Frontend & Development Tools</h3>
+                <p>Interface & Workflow</p>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-emoji">📊</span>
+                <span>HTML5 Canvas 2D API (Charts)</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">💾</span>
+                <span>Web Storage (LocalStorage API)</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">📱</span>
+                <span>Responsive & Mobile-First Design</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-emoji">🐙</span>
+                <span>Git & GitHub • VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects 💻</h2>
+          <p class="section-subtitle">A collection of systems I've developed in C and on the web.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+          <button class="filter-btn" data-filter="c-lang">C Programming (3)</button>
+          <button class="filter-btn" data-filter="frontend">Frontend Web (3)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- PROJECT 1: Student Record Management (C) -->
+          <div class="project-card" data-category="c-lang">
+            <div class="project-banner banner-c">
+              <span class="project-category-badge">C Language</span>
+              <span class="project-icon">🎓</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Record Management System</h3>
+              <p class="project-desc">
+                A terminal-based database application written in C utilizing binary file handling. Facilitates full CRUD operations for student marks, roll numbers, GPA computation, and academic grade reports.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">File Handling</span>
+                <span class="tech-tag">Structs</span>
+                <span class="tech-tag">CRUD Logic</span>
+              </div>
+              <div class="project-features">
+                <span>✓ Persistent record storage</span>
+                <span>✓ Roll-number search & sorting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Hospital Management System (C) -->
+          <div class="project-card" data-category="c-lang">
+            <div class="project-banner banner-c">
+              <span class="project-category-badge">C Language</span>
+              <span class="project-icon">🏥</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Hospital Management System</h3>
+              <p class="project-desc">
+                Comprehensive console software to manage patient admissions, OPD schedules, doctor availability, and invoice bill calculation. Built with clean modular functions and file I/O operations.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Structures</span>
+                <span class="tech-tag">File I/O</span>
+                <span class="tech-tag">Billing Logic</span>
+              </div>
+              <div class="project-features">
+                <span>✓ Patient admittance tracking</span>
+                <span>✓ Automated billing summary</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Digital Voting System (C) -->
+          <div class="project-card" data-category="c-lang">
+            <div class="project-banner banner-c">
+              <span class="project-category-badge">C Language</span>
+              <span class="project-icon">🗳️</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Digital Voting System</h3>
+              <p class="project-desc">
+                Secure electronic voting simulator designed in C. Implements voter ID verification algorithms to prevent duplicate ballots, real-time vote tallying, and instant winner determination.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Authentication Logic</span>
+                <span class="tech-tag">Arrays</span>
+                <span class="tech-tag">Security Checks</span>
+              </div>
+              <div class="project-features">
+                <span>✓ Anti-duplicate vote lock</span>
+                <span>✓ Real-time results tally</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: Personal Expense Tracker (Frontend) -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-banner banner-web">
+              <span class="project-category-badge">Frontend Web</span>
+              <span class="project-icon">💸</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Expense Tracker (SmartSpend)</h3>
+              <p class="project-desc">
+                An interactive personal finance application with real-time balance calculations, monthly budget alerts, custom HTML5 Canvas donut chart visual breakdowns, and CSV data export.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">LocalStorage</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <div class="project-features">
+                <span>✓ Canvas visual spending chart</span>
+                <span>✓ Dynamic budget progress alert</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: Typing Speed Test Application (Frontend) -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-banner banner-web">
+              <span class="project-category-badge">Frontend Web</span>
+              <span class="project-icon">⌨️</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Typing Speed Test Application</h3>
+              <p class="project-desc">
+                A responsive speed test tool that measures Words Per Minute (WPM), accuracy rate, and error count in real time with an active countdown timer, passage generator, and dynamic score cards.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">DOM Manipulation</span>
+                <span class="tech-tag">Timer API</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+              <div class="project-features">
+                <span>✓ Live WPM & accuracy metric</span>
+                <span>✓ Character-by-character highlight</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6: Personal Portfolio Website (Frontend) -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-banner banner-web">
+              <span class="project-category-badge">Frontend Web</span>
+              <span class="project-icon">🌸</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                A personal developer website styled with a bespoke pastel pink aesthetic. Features responsive layouts, project category filtering, dark/light themes, and contact form integration.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">Pastel CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+              <div class="project-features">
+                <span>✓ Custom pastel pink design system</span>
+                <span>✓ Smooth filtering & theme switch</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academics</span>
+          <h2 class="section-title">Education & Milestones 🎓</h2>
+          <p class="section-subtitle">My academic background and milestones in computer science.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-badge">2026 - Present (1st Year)</span>
+              <h3 class="timeline-title">B.Tech in Computer Science & Artificial Intelligence (CSAI)</h3>
+              <p class="timeline-sub">Currently pursuing • Undergraduate Degree</p>
+              <p class="timeline-desc">
+                Studying core programming in C, mathematical foundations, data analysis, and introductory artificial intelligence concepts.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-badge">Completed</span>
+              <h3 class="timeline-title">Senior Secondary Education (Class XII)</h3>
+              <p class="timeline-sub">Science Stream (Physics, Chemistry, Mathematics)</p>
+              <p class="timeline-desc">
+                Developed strong analytical, computational, and problem-solving fundamentals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch 💌</h2>
+          <p class="section-subtitle">Feel free to reach out for collaborations, project discussions, or a friendly hello!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>I am always open to discussing new projects, learning opportunities, and tech collaborations.</p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon">📧</div>
+                <div>
+                  <span class="channel-label">Email</span>
+                  <a href="mailto:bhavya.lakhwan@example.com" class="channel-link">bhavya.lakhwan@example.com</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">💼</div>
+                <div>
+                  <span class="channel-label">LinkedIn</span>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-link">linkedin.com/in/bhavyalakhwan</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">🐙</div>
+                <div>
+                  <span class="channel-label">GitHub</span>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="channel-link">github.com/bhavyalakhwan</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">📍</div>
+                <div>
+                  <span class="channel-label">Location</span>
+                  <span class="channel-val">India 🇮🇳</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send a Message 💬</h3>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group flex-1">
+                  <label for="name" class="form-label">Your Name *</label>
+                  <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group flex-1">
+                  <label for="email" class="form-label">Your Email *</label>
+                  <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" placeholder="Project Inquiry / Hello">
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" rows="4" placeholder="Hello Bhavya, I saw your portfolio..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message ✨</span>
+              </button>
+            </form>
+            <div id="formSuccessMessage" class="form-success" style="display: none;">
+              🌸 Thank you for reaching out! Your message has been received.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="portfolio-footer">
+    <div class="container footer-content">
+      <p>Designed & Coded with 💖 by <strong>Bhavya Lakhwan</strong></p>
+      <p class="footer-sub">B.Tech Computer Science & AI (1st Year) • All Rights Reserved</p>
+      <a href="#hero" class="back-to-top" title="Back to top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
